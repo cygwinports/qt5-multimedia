@@ -8,7 +8,7 @@
      gstvideoconnector_p.h \
      qgstcodecsinfo_p.h \
      qgstreamervideoprobecontrol_p.h \
-@@ -60,12 +59,18 @@ SOURCES += \
+@@ -60,13 +59,19 @@ SOURCES += \
      qgstreamervideorendererinterface.cpp \
      qgstreameraudioinputselector.cpp \
      qgstreamervideorenderer.cpp \
@@ -17,6 +17,7 @@
      gstvideoconnector.c \
      qgstreamervideoprobecontrol.cpp \
      qgstreameraudioprobecontrol.cpp \
+     qgstreamervideowindow.cpp
  
 +linux-* {
 +    PRIVATE_HEADERS += \
@@ -25,8 +26,8 @@
 +        qgstreamervideoinputdevicecontrol.cpp
 +}
 +
- config_xvideo {
-     DEFINES += HAVE_XVIDEO
+ qtHaveModule(widgets) {
+     QT += multimediawidgets
  
 --- origsrc/qtmultimedia-opensource-src-5.1.0/src/plugins/gstreamer/audiodecoder/qgstreameraudiodecoderserviceplugin.cpp	2013-07-02 02:10:25.000000000 -0500
 +++ src/qtmultimedia-opensource-src-5.1.0/src/plugins/gstreamer/audiodecoder/qgstreameraudiodecoderserviceplugin.cpp	2013-08-16 18:36:21.470955600 -0500

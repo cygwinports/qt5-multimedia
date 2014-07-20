@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="qt5-multimedia"
-VERSION=5.1.0
+VERSION=5.2.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Qt C++ application framework (Multimedia library)"
@@ -43,8 +43,10 @@ libQt5Multimedia_devel_CONTENTS="
 	usr/lib/pkgconfig/Qt5MultimediaQuick_p.pc
 	usr/lib/pkgconfig/Qt5MultimediaWidgets.pc
 	usr/lib/qt5/mkspecs/modules/qt_lib_multimedia.pri
+	usr/lib/qt5/mkspecs/modules/qt_lib_multimedia_private.pri
 	usr/lib/qt5/mkspecs/modules/qt_lib_multimediawidgets.pri
-	usr/lib/qt5/mkspecs/modules/qt_lib_qtmultimediaquicktools.pri
+	usr/lib/qt5/mkspecs/modules/qt_lib_multimediawidgets_private.pri
+	usr/lib/qt5/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri
 "
 qt5_multimedia_doc_CATEGORY="Doc"
 qt5_multimedia_doc_CONTENTS="usr/share/qt5/doc/qtmultimedia*"
