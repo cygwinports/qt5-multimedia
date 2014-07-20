@@ -28,6 +28,7 @@ libQt5Multimedia5_CONTENTS="
 	usr/lib/qt5/plugins/playlistformats/
 	usr/lib/qt5/qml/QtAudioEngine/
 	usr/lib/qt5/qml/QtMultimedia/
+	usr/share/doc/
 "
 libQt5Multimedia_devel_CONTENTS="
 	usr/include/qt5/QtMultimedia/
