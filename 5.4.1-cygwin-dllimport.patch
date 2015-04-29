@@ -1,0 +1,46 @@
+This is a plugin, not part of the QtMultimedia library
+
+--- origsrc/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabincapturebufferformat.h	2015-02-16 22:57:20.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabincapturebufferformat.h	2015-04-27 22:17:48.072513600 -0500
+@@ -46,7 +46,7 @@ class CameraBinSession;
+ 
+ QT_USE_NAMESPACE
+ 
+-class Q_MULTIMEDIA_EXPORT CameraBinCaptureBufferFormat : public QCameraCaptureBufferFormatControl
++class CameraBinCaptureBufferFormat : public QCameraCaptureBufferFormatControl
+ {
+     Q_OBJECT
+ public:
+--- origsrc/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabincapturedestination.h	2015-02-16 22:57:20.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabincapturedestination.h	2015-04-27 22:17:53.335682000 -0500
+@@ -43,7 +43,7 @@ class CameraBinSession;
+ 
+ QT_USE_NAMESPACE
+ 
+-class Q_MULTIMEDIA_EXPORT CameraBinCaptureDestination : public QCameraCaptureDestinationControl
++class CameraBinCaptureDestination : public QCameraCaptureDestinationControl
+ {
+     Q_OBJECT
+ public:
+--- origsrc/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabinexposure.h	2015-02-16 22:57:20.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabinexposure.h	2015-04-27 22:17:59.867511400 -0500
+@@ -44,7 +44,7 @@ QT_BEGIN_NAMESPACE
+ 
+ class CameraBinSession;
+ 
+-class Q_MULTIMEDIA_EXPORT CameraBinExposure : public QCameraExposureControl
++class CameraBinExposure : public QCameraExposureControl
+ {
+     Q_OBJECT
+ 
+--- origsrc/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabinflash.h	2015-02-16 22:57:20.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.4.1/src/plugins/gstreamer/camerabin/camerabinflash.h	2015-04-27 22:18:05.637744100 -0500
+@@ -44,7 +44,7 @@ QT_BEGIN_NAMESPACE
+ 
+ class CameraBinSession;
+ 
+-class Q_MULTIMEDIA_EXPORT CameraBinFlash : public QCameraFlashControl
++class CameraBinFlash : public QCameraFlashControl
+ {
+     Q_OBJECT
+ public:

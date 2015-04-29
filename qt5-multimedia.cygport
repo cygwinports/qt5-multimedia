@@ -2,7 +2,7 @@ inherit qt5-qmake
 
 NAME="qt5-multimedia"
 VERSION=5.4.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Qt C++ application framework (Multimedia library)"
 DESCRIPTION="Qt is a cross-platform application framework for desktop and
@@ -13,6 +13,7 @@ investments made on one platform across many others."
 HOMEPAGE="http://qt-project.org/"
 SRC_URI="http://download.qt-project.org/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtmultimedia-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qtmultimedia-opensource-src-${VERSION}"
+PATCH_URI="5.4.1-cygwin-dllimport.patch"
 
 PKG_NAMES="libQt5Multimedia5 libQt5Multimedia-devel ${NAME}-doc ${NAME}-examples"
 libQt5Multimedia5_CONTENTS="
